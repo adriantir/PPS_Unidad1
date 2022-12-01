@@ -1,21 +1,21 @@
 #Comprobamos si el numero esta en la lista
-def estaEnLista(num, lista):
+def estaEnLista(numero, lista):
 
-    if num in lista:
-        print("El número " + str(num) + " esta en la lista.")
+    if numero in lista:
+        print("El número " + str(numero) + " esta en la lista.")
     else:
-        print("El número  " + str(num) + " esta en la lista.")
+        print("El número  " + str(numero) + " esta en la lista.")
 
 # Se comprueba si el número está dentro del rango, si lo está entonces se chequea si está dentro de la lista.
 
 
-def estaEnRango(valor, minimo, maximo):
+def estaEnRango(valores, minimo, maximo):
 
-    if valor < minimo or valor > maximo:
-        print("El número " + str(valor) + " está fuera del rango de la lista")
-        return
+    if valores < minimo or valor > maximo:
+        print("El número " + str(valores) + " está fuera del rango de la lista")
+        break
     else:
-        print("El número " + str(valor) + " está dentro del rango de la lista")
+        print("El número " + str(valores) + " está dentro del rango de la lista")
 
 # Ejecución segura ante fallos, solo se permitirá numeros no letras.
 
@@ -25,4 +25,4 @@ try:
     estaEnRango(5, 5, 10)
     estaEnLista(-1, lista)
 except (ValueError, TypeError):
-    print("Introduce únicamente números")
+    print("Introduce un valor de forma correcta")
