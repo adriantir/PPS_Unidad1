@@ -11,9 +11,9 @@ def estaEnLista(numero, lista):
 
 def estaEnRango(valores, minimo, maximo):
 
-    if valores < minimo or valor > maximo:
+    if valores < minimo or valores > maximo:
         print("El número " + str(valores) + " está fuera del rango de la lista")
-        break
+        exit
     else:
         print("El número " + str(valores) + " está dentro del rango de la lista")
 
