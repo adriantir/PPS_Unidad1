@@ -4,7 +4,7 @@ def estaEnLista(numero, lista):
     if numero in lista:
         print("El número " + str(numero) + " esta en la lista.")
     else:
-        print("El número  " + str(numero) + " esta en la lista.")
+        print("El número  " + str(numero) + " no  esta en la lista.")
 
 # Se comprueba si el número está dentro del rango, si lo está entonces se chequea si está dentro de la lista.
 
